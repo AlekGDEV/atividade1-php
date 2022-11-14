@@ -20,6 +20,7 @@
             <th>Nome</th>
             <th>Matricula</th>
             <th>Cidade</th>
+            <th>Ações</th>
         </thead>
         <tbody class="table-danger">
             <?php
@@ -30,6 +31,12 @@
                         <td>'. $eachAluno['nome'] .'</td>
                         <td>'. $eachAluno['matricula'] .'</td>
                         <td>'. $eachAluno['cidade'] .'</td> 
+                        <td>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-warning me-2">Editar</button>
+                                <button class="btn btn-danger">Excluir</button>
+                            </div>
+                        </td>
                     </tr>';
                 }
             ?>
